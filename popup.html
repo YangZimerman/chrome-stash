@@ -1,0 +1,54 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="css/popup.css" >
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.mustache.js"></script>
+    <script type="text/javascript" src="js/jquery.tinyscrollbar.js"></script>
+    <script id="tpl-main" type="text/x-tmpl-mustache">
+        <div id="stash-hd" class="clr">
+            <span>{{listTitle}}</span><input type="button" id="btn-stash" class="fr" value="{{btnStash}}"/>
+        </div>
+            {{^empty}}
+            <div id="stash-bd" class="tinyscrl">
+                <div class="viewport">
+                    <ul id="stash-list" class='list overview'>
+                    </ul>
+                </div>
+                <div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+            </div>
+            {{/empty}}
+            {{#empty}}
+            <div id="stash-bd" class="nolist">
+                <div class="nl-msg">{{{empty}}}</div>
+            </div>
+            {{/empty}}
+    </script>
+    <script id="tpl-item" type="text/x-tmpl-mustache">
+        {{#list}}
+        <li class="clr" data-id="{{id}}">
+            <input type="button" value="{{count}}" class="item-count fl"/>
+            <div class="item-info fl">
+                <div class="ii-title">{{stitle}}</div>
+                <div class="ii-time">{{stime}}</div>
+            </div>
+            <input type="button" value="" class="item-pop fr"/>
+        </li>
+        {{/list}}
+    </script>
+    <script id="tpl-slider" type="text/x-tmpl-mustache">
+        <div class="slider">
+            <div class="slider-inner">
+            {{#favlist}}
+            <img src="{{url}}" title="{{title}}"/>
+            {{/favlist}}
+            </div>
+        </div>
+    </script>
+
+</head>
+<body>
+    <div id="content">
+    </div>
+</body>
+<script type="text/javascript" src="js/popup.js"></script>
+</html>

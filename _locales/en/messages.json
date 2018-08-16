@@ -1,0 +1,23 @@
+{
+    "appName" : {
+        "message" : "Stash"
+    },
+    "description" : {
+        "message" : "Stash your tabs, quickly save, easily recover."  
+    },
+    "iconTitle" : {
+        "message" : "Stash"
+    },
+    "listTitle" : {
+        "message" : "Your stash list"
+    },
+    "btnStash" : {
+        "message" : "Stash"
+    },
+    "storage" : {
+        "message" : "Stash List"
+    },
+    "empty" : {
+        "message" : "<p>Sorry, you haven't stash any tab yet.</p><p>Try stash button, you'll find the magic.</p><p>Seven Team</p>"
+    }
+}

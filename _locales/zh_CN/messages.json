@@ -1,0 +1,23 @@
+{
+    "appName" : {
+        "message" : "暂存"
+    },
+    "description" : {
+        "message" : "保存窗口，顷刻收纳，轻松还原"
+    },
+    "iconTitle" : {
+        "message" : "暂存"
+    },
+    "listTitle" : {
+        "message" : "你的暂存列表"
+    },
+    "btnStash" : {
+        "message" : "暂存"
+    },
+    "storage" : {
+        "message" : "Stash List"
+    },
+    "empty" : {
+        "message" : "<p>你还没有暂存任何标签。</p><p>你可以通过点击“暂存”按钮存储当前的标签。</p><p>Seven团队</p>"
+    }
+}
